@@ -24,11 +24,11 @@
 .seccion-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
   margin-bottom: 25px;
 
   .imagen-logo {
-    width: 50px;
+    width: 1220px;
     height: 50px;
     object-fit: contain; /* Evita que la imagen se deforme */
   }
@@ -83,6 +83,15 @@
     border: 1px solid #e9ecef;
     border-radius: 16px;
     padding-left: 10px;
+
+    /* 👇 NUEVAS LÍNEAS PARA EL COLOR DEL TEXTO 👇 */
+    --color: #0b2545 !important; /* Color del texto flotante/label */
+
+    ion-input {
+      --color: #0b2545 !important; /* Color del texto que escribe el usuario */
+      --placeholder-color: #8d99ae !important; /* Color del texto de fondo gris */
+      --placeholder-opacity: 1 !important;
+    }
   }
 
   /* --- Enlace: Olvidé mi contraseña --- */
