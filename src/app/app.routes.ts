@@ -14,6 +14,7 @@ export const routes: Routes = [
     path: 'iniciar-sesion',
     loadComponent: () => import('./iniciar-sesion/iniciar-sesion.page').then(m => m.IniciarSesionPage)
   },
+  
   {
     path: 'inicio',
     loadComponent: () => import('./inicio/inicio.page').then(m => m.InicioPage)
@@ -22,16 +23,31 @@ export const routes: Routes = [
     path: 'services',
     loadComponent: () => import('./services/services.page').then(m => m.ServicesPage)
   },
+  
   {
     path: 'carrito',
     loadComponent: () => import('./carrito/carrito.page').then(m => m.CarritoPage)
   },
+  
   {
     path: 'citas',
     loadComponent: () => import('./citas/citas.page').then(m => m.CitasPage)
   },
+ 
+  {
+    path: 'vehiculos',
+    loadComponent: () => import('./vehiculos/vehiculos.page').then(m => m.VehiculosPage)
+  },
+  {
+    path: 'agregar-vehiculo',
+    loadComponent: () => import('./agregar-vehiculo/agregar-vehiculo.page').then(m => m.AgregarVehiculoPage)
+  },
+  {
+    path: 'seleccionar-vehiculo',
+    loadComponent: () => import('./seleccionar-vehiculo/seleccionar-vehiculo.page').then(m => m.SeleccionarVehiculoPage)
+  },
   {
     path: 'perfil',
     loadComponent: () => import('./perfil/perfil.page').then(m => m.PerfilPage)
-  },
+  }
 ];
